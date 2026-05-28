@@ -9,9 +9,9 @@ export default async function CoreGroupLayout({
   return (
     <>
       <Navbar />
-      <div>
+      <div className="flex mx-auto max-w-[1200px] gap-8 px-4 pb-16 pt-2 " >
         <LeftSidebar />
-        <div>{children} </div>
+        <div className=" min-w-0 flex-1"> {children} </div>
       </div>
     </>
   );

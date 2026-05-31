@@ -66,7 +66,8 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  /* --primary: oklch(0.205 0 0); */
+   --primary: oklch(0.6 0.22 32); 
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -97,12 +98,14 @@
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
+   --primary: oklch(0.6 0.22 32);        /* orange, same as :root */
+  --primary-foreground: oklch(0.985 0 0); /* white text */
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
+  /* --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0); */
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
@@ -138,4 +141,11 @@
   html {
     @apply font-sans;
   }
+}
+
+/* Add this at the very bottom of globals.css */
+:root,
+.dark {
+  --primary: oklch(0.6 0.22 32) !important;
+  --primary-foreground: oklch(0.985 0 0) !important;
 }

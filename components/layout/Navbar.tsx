@@ -33,7 +33,7 @@ export function Navbar() {
 
         <div className="ml-auto flex items-center gap-2">
           <Link href="/auth/sign-in" className={cn(buttonVariants({variant: "ghost", size: "default"}))}>
-            Log In
+            Log In 
           </Link>
            <Link href="/auth/sign-up" className={cn(buttonVariants({ variant: "default" }))}>
             Sign Up

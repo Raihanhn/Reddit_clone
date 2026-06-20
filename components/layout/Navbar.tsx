@@ -19,7 +19,7 @@ export function Navbar() {
           >
             T
           </span>
-          <span className="text-lg">Threadly</span>
+          <span className="text-lg">Threadonly</span>
         </Link>
 
         <div className="relative mx-auto hidden max-w-xl flex-1 md:block">

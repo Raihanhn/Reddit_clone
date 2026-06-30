@@ -1,6 +1,8 @@
 
-import { prisma } from "../prisma";
+//lib/db/user-profile.ts
 import {User} from "../types"
+import { prisma } from "../prisma"
+
 function generateusername(name: string): string {
     const base =
     name
